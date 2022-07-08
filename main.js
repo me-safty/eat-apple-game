@@ -17,7 +17,7 @@ let moveX = 0;
 let moveY = 0;
 let numStep = 20; 
 let timeStep = 100;
-let hard = 5;
+let hard = 1;
 let x = 0;
 let y = 0;
 document.documentElement.style.setProperty('--blockWidth', `${numStep + 20}px`);
