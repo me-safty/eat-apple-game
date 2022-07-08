@@ -36,8 +36,6 @@ function move(chr, e, move, op, eq) {
         move === 'x' ? moveX += numStep : moveY += numStep;
       }
       block.style.transform = `translate(${moveX}px, ${moveY}px)`;
-      console.log(moveY);
-      console.log(moveX);
       //=====================
       if (move === 'y') {
         if (moveY === eq) {
@@ -106,12 +104,8 @@ function createAxis() {
   for (let i = 0; i <= 760; i += numStep) {
     arrp.push(i);
   }
-  console.log(arr);
-  console.log(arrp);
   let xAxis = arrp[Math.floor(Math.random() * arrp.length)];
   let yAxis = arr[Math.floor(Math.random() * arr.length)];
-  console.log(xAxis);
-  console.log(yAxis);
   createApple(xAxis, yAxis);
   x = xAxis;
   y = yAxis;
